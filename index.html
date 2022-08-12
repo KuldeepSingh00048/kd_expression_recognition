@@ -1,0 +1,200 @@
+<!Doctype html>
+<head>
+<Title> Face-expression-Recognition</Title>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .navbar{
+        display: flex;
+        padding: 10px;
+        background-color: rgb(146, 6, 201);
+        position: sticky;
+        top: 0px;
+        /* border: 2px solid red; */
+        /* margin: 0px 20px; */
+    }
+    .navbar img{
+        height: 70px;
+        width: 70px;
+    }
+    .heading{
+        margin-left: 550px;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .part1{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid rgb(79, 79, 4); */
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0px;
+    }
+    .content{
+        box-shadow: 2px 2px 20px black;
+        border-radius: 15px;
+        border-bottom: 4px solid rgb(146, 6, 201);
+        background-color: rgb(246, 244, 241);
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        /* width: auto; */
+        /* height: auto; */
+        /* padding: 10px; */        
+    }
+    .content h1{
+        width: auto;
+        margin: 10px 0px;
+        font-size: 35px;
+    }
+    .content .about{
+        padding: 10px;
+        font-size: 25px;
+        text-align:justify;
+        margin: 10px 0px;
+    }
+    .part2{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid rgb(138, 14, 134); */
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0px;
+        
+    }
+    .part2 img{
+        margin: 20px 0px;
+        height: 400px;
+        width: 600px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 20px black;
+    }
+    .content2 h1{
+        margin: 20px 0px;
+        font-size: 30px;
+        /* color: aqua;  */
+    }
+    .content2{
+        box-shadow: 2px 2px 20px black;
+        border-radius: 15px;
+        border: 4px solid  rgb(146, 6, 201);
+        background-color: rgb(246, 244, 241);
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        /* width: auto; */
+        /* height: auto; */
+    }
+    .part3{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid rgb(138, 14, 134); */
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0px;
+        
+    }
+    .content3{
+        box-shadow: 2px 2px 20px black;
+        border-radius: 15px;
+        border-bottom: 4px solid rgb(146, 6, 201);
+
+        /* border: 4px solid  aqua; */
+        background-color: rgb(246, 244, 241);
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        height: auto;
+        /* width: auto; */
+    }
+    .content3 h1{
+        margin: 20px 0px;
+        font-size: 25px;
+        /* color: aqua;  */
+    }
+    .content3 img{
+        margin: 20px 0px;
+        height: auto;
+        color: rgb(146, 6, 201);
+        background-color: rgb(0, 0, 0);
+        width: 600px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 20px black;
+
+    }
+    .content3 a{
+        margin: 20px 0px;
+        padding: 10px;
+        font-weight: bolder;
+        border: 2px solid black;
+        border-radius: 5px;
+        color: rgb(8, 49, 174);
+        box-shadow: 2px 2px 20px black;
+    }
+    @media only screen and (max-width: 1100px){
+        .heading{
+         margin-left: 150px;
+        }
+
+    }
+</style>
+
+</head>
+<body>
+    <nav>
+        <nav  class='navbar'>
+            <img  src="face.png">
+            <div class="heading">Face Expression Recognition</div>
+    </nav>
+    <section class="part1">
+      <div class="content">
+           <h1>About this Porject</h1>
+           <div class="about">
+            This project is all about the expression of human being.
+             It recognize the expressions or you can say emotions during 
+             live video call/conferencing.
+             Basically this project able to detect 7 types of 
+             emotions(Happy, Sad, Disgust, Neutral, Surprise, Fear)
+             <br>
+             <br>
+             The objective of emotion recognition is to identifying emotions of a human. 
+             The emotion can be captured either from face or from verbal communication. 
+             In this work we focus on identifying human emotion from facial expressions.
+
+   
+           </div>
+      </div>
+    </section>
+    <section class="part2">
+      <div class="content2">
+           <h1>Lets have look in this Accuracy</h1>
+           <img src="output1.png">
+           <img src="output2.png">
+           <h1>Training Model(28 Ephocs)</h1>
+           <img src="model1.png">
+           <img src="model2.png">
+      </div>
+    </section>
+    <section class="part3">
+      <div class="content3">
+           <h1>Code Snippets available on Github Repository below this image</h1>
+           <img src="code.png">
+           <a href="#">emotion-recognition.py</a>
+      </div>
+    </section>
+</body>
+</html>
